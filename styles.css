@@ -308,6 +308,16 @@ footer p {
   color: var(--muted);
   font-size: 14px;
 }
+.menu-toggle {
+  display: none;
+  background: rgba(0,0,0,.45);
+  border: 1px solid var(--line);
+  color: var(--gold-2);
+  font-size: 26px;
+  border-radius: 10px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
 
 @media (max-width: 850px) {
   .hero {
@@ -326,7 +336,33 @@ footer p {
 
   .nav { align-items: flex-start; }
 
-  .nav-links { display: none; }
+  .menu-toggle {
+  display: block;
+}
+
+.nav {
+  position: relative;
+}
+
+.nav-links {
+  display: none;
+  position: absolute;
+  top: 74px;
+  right: 0;
+  flex-direction: column;
+  gap: 12px;
+  background: rgba(16,11,8,.96);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 18px;
+  min-width: 220px;
+  box-shadow: 0 16px 32px rgba(0,0,0,.45);
+  z-index: 20;
+}
+
+.menu-open .nav-links {
+  display: flex;
+}
 
   .brand img {
     width: 58px;
