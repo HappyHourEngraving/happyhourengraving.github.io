@@ -195,6 +195,13 @@ main {
   background: #1b130e;
   display: block;
 }
+.about-photo {
+  width: 320px;
+  max-width: 100%;
+  border-radius: 18px;
+  border: 1px solid var(--line);
+  box-shadow: 0 14px 30px rgba(0,0,0,.35);
+}
 
 .card div { padding: 22px; }
 .events-section {
