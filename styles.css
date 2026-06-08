@@ -224,8 +224,7 @@ main {
 }
 
 .event-photos {
-  display: grid;
-  gap: 16px;
+  display: flex;
 }
 
 .event-photos img {
