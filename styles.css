@@ -209,8 +209,22 @@ main {
 }
 
 .view-all-card {
-  max-width: 420px;
   width: 100%;
+  max-width: 900px;
+}
+
+.view-all-layout {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  align-items: center;
+}
+
+.view-all-content {
+  padding: 30px;
+}
+
+.view-all-content p {
+  margin-bottom: 20px;
 }
 .slideshow {
   position: relative;
@@ -424,6 +438,9 @@ footer p {
   .pet-cards {
     grid-template-columns: 1fr;
   }
+    .view-all-layout {
+  grid-template-columns: 1fr;
+}
 
 }
 
