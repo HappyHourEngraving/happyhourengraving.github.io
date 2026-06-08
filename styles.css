@@ -176,7 +176,13 @@ main {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 380px));
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.pet-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(320px, 380px));
   gap: 22px;
   justify-content: center;
 }
