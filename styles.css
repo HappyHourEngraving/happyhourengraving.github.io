@@ -132,6 +132,12 @@ p {
   letter-spacing: .08em;
   font-size: 13px;
 }
+.custom-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: center;
+}
 
 .primary {
   background: linear-gradient(135deg, var(--gold-2), var(--gold));
