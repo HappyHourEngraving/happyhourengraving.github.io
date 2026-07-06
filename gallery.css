@@ -1,13 +1,16 @@
 .gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(210px, 230px));
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: start;
+  align-items: stretch;
   gap: 28px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .gallery-card {
   position: relative;
+  flex: 0 1 230px;
   width: 100%;
   max-width: 230px;
 }
@@ -56,11 +59,8 @@
 }
 
 @media (max-width: 850px) {
-  .gallery-grid {
-    grid-template-columns: minmax(0, 280px);
-  }
-
   .gallery-card {
+    flex-basis: 280px;
     max-width: 280px;
   }
 }
