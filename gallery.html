@@ -45,13 +45,30 @@
   </header>
 
   <main>
-    <section class="grid-section">
-      <div class="section-heading">
+    <section class="gallery-intro">
+      <div class="section-heading gallery-heading">
         <p class="eyebrow">Recent Work</p>
         <h2>Finished Projects</h2>
+        <p>
+          Browse by product type to see examples of crystal keepsakes, engraved coins, and custom coasters.
+        </p>
       </div>
 
-      <div class="cards gallery-grid">
+      <nav class="gallery-category-nav" aria-label="Gallery categories">
+        <a href="#crystals">Crystals</a>
+        <a href="#coins">Coins</a>
+        <a href="#coasters">Coasters</a>
+      </nav>
+    </section>
+
+    <section class="gallery-category" id="crystals">
+      <div class="gallery-category-heading">
+        <p class="eyebrow">Category</p>
+        <h2>Crystals</h2>
+        <p>Illuminated keepsakes and detailed portraits engraved inside crystal.</p>
+      </div>
+
+      <div class="gallery-grid">
         <article class="card gallery-card">
           <img
             class="deferred-gallery-image"
@@ -65,23 +82,43 @@
         </article>
 
         <article class="card gallery-card">
-          <img src="pictures/gallery/gallery-viking-coaster.svg?v=6" alt="Viking skull design engraved on a round coaster" />
+          <img src="pictures/gallery/crystal-pet-keychain-verified.svg?v=8" alt="Light-up engraved crystal keychain featuring a cat portrait" />
           <div class="gallery-card-copy">
-            <h3>Viking Skull Coaster</h3>
+            <h3>Crystal Pet Keychain</h3>
           </div>
         </article>
+      </div>
+    </section>
 
+    <section class="gallery-category" id="coins">
+      <div class="gallery-category-heading">
+        <p class="eyebrow">Category</p>
+        <h2>Coins</h2>
+        <p>Detailed metal engravings designed as keepsakes, gifts, and challenge coins.</p>
+      </div>
+
+      <div class="gallery-grid gallery-grid-single">
         <article class="card gallery-card">
           <img src="pictures/gallery/gallery-raven-queen-coin.svg?v=6" alt="Raven queen engraved brass coin" />
           <div class="gallery-card-copy">
             <h3>Raven Queen Coin</h3>
           </div>
         </article>
+      </div>
+    </section>
 
+    <section class="gallery-category" id="coasters">
+      <div class="gallery-category-heading">
+        <p class="eyebrow">Category</p>
+        <h2>Coasters</h2>
+        <p>Functional slate pieces with bold artwork, portraits, and custom designs.</p>
+      </div>
+
+      <div class="gallery-grid">
         <article class="card gallery-card">
-          <img src="pictures/gallery/crystal-pet-keychain-verified.svg?v=8" alt="Light-up engraved crystal keychain featuring a cat portrait" />
+          <img src="pictures/gallery/gallery-viking-coaster.svg?v=6" alt="Viking skull design engraved on a round coaster" />
           <div class="gallery-card-copy">
-            <h3>Crystal Pet Keychain</h3>
+            <h3>Viking Skull Coaster</h3>
           </div>
         </article>
 
