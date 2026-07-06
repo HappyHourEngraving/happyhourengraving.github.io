@@ -150,6 +150,12 @@
     max-width: none;
   }
 
+  .gallery-grid-single .gallery-card {
+    grid-column: 1 / -1;
+    justify-self: center;
+    max-width: 220px;
+  }
+
   .gallery-card .gallery-card-copy {
     min-height: 62px;
     padding: 11px 8px 13px;
