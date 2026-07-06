@@ -5,42 +5,42 @@
 
 .gallery-heading {
   max-width: 760px;
-  margin: 0 auto 24px;
-}
-
-.gallery-heading p:last-child,
-.gallery-category-heading p:last-child {
-  margin: 0;
+  margin: 0 auto 30px;
 }
 
 .gallery-category-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  width: min(100%, 760px);
+  margin: 0 auto;
 }
 
 .gallery-category-nav a {
-  display: inline-block;
-  padding: 11px 18px;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  background: rgba(255,255,255,.04);
+  display: grid;
+  place-items: center;
+  min-height: 58px;
+  padding: 12px 18px;
+  border: 2px solid var(--gold);
+  border-radius: 10px;
+  background: linear-gradient(180deg, rgba(190, 135, 72, .28), rgba(88, 53, 28, .34));
+  box-shadow: 0 8px 20px rgba(0, 0, 0, .22), inset 0 1px 0 rgba(255, 255, 255, .08);
   color: var(--gold-2);
   font-family: Arial, sans-serif;
-  font-size: 13px;
-  font-weight: 800;
-  letter-spacing: .08em;
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: .1em;
   text-decoration: none;
   text-transform: uppercase;
-  transition: transform .2s ease, background .2s ease, color .2s ease;
+  transition: transform .2s ease, background .2s ease, color .2s ease, box-shadow .2s ease;
 }
 
 .gallery-category-nav a:hover,
 .gallery-category-nav a:focus-visible {
-  background: var(--gold);
+  background: linear-gradient(180deg, var(--gold-2), var(--gold));
+  box-shadow: 0 10px 24px rgba(0, 0, 0, .3);
   color: #160e08;
-  transform: translateY(-2px);
+  transform: translateY(-3px);
 }
 
 .gallery-category {
@@ -61,7 +61,7 @@
 }
 
 .gallery-category-heading h2 {
-  margin-bottom: 12px;
+  margin: 0;
 }
 
 .gallery-grid {
@@ -135,6 +135,23 @@
     margin-bottom: 48px;
   }
 
+  .gallery-heading {
+    margin-bottom: 22px;
+  }
+
+  .gallery-category-nav {
+    gap: 8px;
+  }
+
+  .gallery-category-nav a {
+    min-height: 48px;
+    padding: 10px 5px;
+    border-width: 1px;
+    border-radius: 8px;
+    font-size: clamp(10px, 3vw, 12px);
+    letter-spacing: .06em;
+  }
+
   .gallery-category {
     margin-bottom: 58px;
   }
@@ -164,14 +181,5 @@
   .gallery-card-copy h3 {
     font-size: clamp(13px, 3.8vw, 16px);
     line-height: 1.2;
-  }
-
-  .gallery-category-nav {
-    gap: 8px;
-  }
-
-  .gallery-category-nav a {
-    padding: 9px 13px;
-    font-size: 11px;
   }
 }
