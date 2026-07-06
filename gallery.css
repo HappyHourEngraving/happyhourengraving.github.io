@@ -1,12 +1,13 @@
 .gallery-grid {
-  grid-template-columns: repeat(3, minmax(0, 240px));
+  grid-template-columns: repeat(3, minmax(0, 180px));
   justify-content: center;
   align-items: start;
+  gap: 28px;
 }
 
 .gallery-card {
   width: 100%;
-  max-width: 240px;
+  max-width: 180px;
 }
 
 .gallery-card img {
@@ -19,10 +20,10 @@
 
 @media (max-width: 850px) {
   .gallery-grid {
-    grid-template-columns: minmax(0, 280px);
+    grid-template-columns: minmax(0, 200px);
   }
 
   .gallery-card {
-    max-width: 280px;
+    max-width: 200px;
   }
 }
