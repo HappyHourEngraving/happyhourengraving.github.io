@@ -35,31 +35,13 @@
   line-height: 1.25;
 }
 
-.deferred-gallery-image {
-  opacity: 0;
-  transition: opacity 0.25s ease;
-}
-
-.deferred-gallery-image.is-loaded {
-  opacity: 1;
-}
-
-.gallery-card.image-error::after {
-  content: "Photo unavailable";
-  position: absolute;
-  inset: 0 0 auto;
-  display: grid;
-  place-items: center;
-  aspect-ratio: 1 / 1;
-  padding: 20px;
-  color: var(--muted);
-  background: var(--panel);
-  font-family: Arial, sans-serif;
-  text-align: center;
-}
-
 @media (max-width: 520px) {
   .gallery-grid {
-    max-width: 200px;
+    max-width: 220px;
+  }
+
+  .gallery-card {
+    flex-basis: 220px;
+    max-width: 220px;
   }
 }
