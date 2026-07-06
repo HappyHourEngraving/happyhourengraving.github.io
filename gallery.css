@@ -58,24 +58,8 @@
   text-align: center;
 }
 
-@media (max-width: 850px) {
-  .gallery-grid {
-    max-width: 520px;
-  }
-
-  .gallery-card {
-    flex-basis: 220px;
-    max-width: 220px;
-  }
-}
-
 @media (max-width: 520px) {
   .gallery-grid {
-    max-width: 240px;
-  }
-
-  .gallery-card {
-    flex-basis: 220px;
-    max-width: 220px;
+    max-width: 200px;
   }
 }
