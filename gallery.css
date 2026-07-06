@@ -1,13 +1,15 @@
 .gallery-grid {
-  grid-template-columns: repeat(3, minmax(0, 180px));
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 230px));
   justify-content: center;
   align-items: start;
   gap: 28px;
 }
 
 .gallery-card {
+  position: relative;
   width: 100%;
-  max-width: 180px;
+  max-width: 230px;
 }
 
 .gallery-card img {
@@ -16,14 +18,49 @@
   aspect-ratio: 1 / 1;
   object-fit: cover;
   display: block;
+  background: #1b130e;
+}
+
+.gallery-card .gallery-card-copy {
+  padding: 16px 18px 18px;
+  text-align: center;
+}
+
+.gallery-card-copy h3 {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.deferred-gallery-image {
+  opacity: 0.35;
+  transition: opacity 0.25s ease;
+}
+
+.deferred-gallery-image.is-loaded {
+  opacity: 1;
+}
+
+.gallery-card.image-error::after {
+  content: "Photo unavailable";
+  position: absolute;
+  inset: 0 0 auto;
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1 / 1;
+  padding: 20px;
+  color: var(--muted);
+  background: var(--panel);
+  font-family: Arial, sans-serif;
+  text-align: center;
 }
 
 @media (max-width: 850px) {
   .gallery-grid {
-    grid-template-columns: minmax(0, 200px);
+    grid-template-columns: minmax(0, 280px);
   }
 
   .gallery-card {
-    max-width: 200px;
+    max-width: 280px;
   }
 }
