@@ -1,0 +1,28 @@
+.gallery-grid {
+  grid-template-columns: repeat(3, minmax(0, 240px));
+  justify-content: center;
+  align-items: start;
+}
+
+.gallery-card {
+  width: 100%;
+  max-width: 240px;
+}
+
+.gallery-card img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 850px) {
+  .gallery-grid {
+    grid-template-columns: minmax(0, 280px);
+  }
+
+  .gallery-card {
+    max-width: 280px;
+  }
+}
