@@ -1,4 +1,17 @@
 document.addEventListener("DOMContentLoaded", async () => {
+  const titleRenames = new Map([
+    ["Custom Slate Coaster Set", "Slate Coaster Set"],
+    ["Custom Dog Portrait Coaster", "Dog Portrait Coaster"],
+    ["Custom Cat Portrait Coaster", "Cat Portrait Coaster"],
+    ["Custom Anniversary Tumbler", "Anniversary Tumbler"],
+    ["Custom QR Code Setup", "Logo & QR Code Setup"]
+  ]);
+
+  document.querySelectorAll(".gallery-card h3").forEach((heading) => {
+    const replacement = titleRenames.get(heading.textContent.trim());
+    if (replacement) heading.textContent = replacement;
+  });
+
   const deferredImages = document.querySelectorAll("img[data-base64-parts]");
 
   await Promise.all(
