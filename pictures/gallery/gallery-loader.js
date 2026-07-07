@@ -4,7 +4,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     ["Custom Dog Portrait Coaster", "Dog Portrait Coaster"],
     ["Custom Cat Portrait Coaster", "Cat Portrait Coaster"],
     ["Custom Anniversary Tumbler", "Anniversary Tumbler"],
-    ["Custom QR Code Setup", "Logo & QR Code Setup"]
+    ["Custom QR Code Setup", "Logo & QR Code Setup"],
+    ["Personalized Laser Clips", "Flashlight Clips"]
   ]);
 
   document.querySelectorAll(".gallery-card h3").forEach((heading) => {
